@@ -168,17 +168,10 @@
 
 
   <!-- Phần audio nhạc -->
-  <button onclick="playAudio()">Nhấn vào đây để nghe nhạc</button>
-<audio id="audio" loop>
+<audio autoplay loop muted>
   <source src="<iframe scrolling="no" width=640 height=180 src=https://zingmp3.vn/embed/song/Z8WC999U?start=true frameborder="0" allowfullscreen="true"/>" type="audio/mpeg">
 </audio>
 
-<script>
-  function playAudio() {
-    var audio = document.getElementById("audio");
-    audio.play();
-  }
-</script>
   </audio>
 
   <div class="container">
