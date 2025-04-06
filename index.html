@@ -168,8 +168,17 @@
 
 
   <!-- Phần audio nhạc -->
-  <audio id="loveSong" preload="auto">
-    <source src="https://www.dropbox.com/scl/fi/velvkcv9ulv7kr3ky7f8x/y2mate.com-L-NG-c-a-H-i-Long-Salim-KAI-INH-Official-MV.mp3?rlkey=kfztt1asokizj3glk8p6vgw6z&st=4ae69v27&dl=1"> type="audio/mpeg">
+  <button onclick="playAudio()">Nhấn vào đây để nghe nhạc</button>
+<audio id="audio" loop>
+  <source src="<iframe scrolling="no" width=640 height=180 src=https://zingmp3.vn/embed/song/Z8WC999U?start=true frameborder="0" allowfullscreen="true"/>" type="audio/mpeg">
+</audio>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+</script>
   </audio>
 
   <div class="container">
